@@ -1,0 +1,48 @@
+/*CSS for GeoJSON Rules Demo*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+
+
+h1,h2,h4,h5 {
+  font-family: 'Acme', sans-serif;
+  color: black;
+}
+
+h3 {
+	font-family: 'Poppins' , sans-serif;
+}
+
+h4 {
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+#map{
+  width: 800px;
+  height: 600px;
+  margin-left: 50px;
+}
+
+.column {
+  float: left;
+  padding-left: 50px;
+  width: 30%;
+}
+
+footer {
+	position: fixed;
+	left:0px;
+	bottom:0;
+	width: 100%;
+	text-align: left;
+  margin-left: 50px;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!-- Web Map created by Justin Chang -->
+<!-- Map created on February 28, 2020 -->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Map of bicycle shelters, routes and points using Mapbox</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css" type="text/css" />
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-language/v0.10.1/mapbox-gl-language.js'></script>
+    <link rel="stylesheet"href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css" type="text/css"/>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.js"></script>
+  <link rel="stylesheet"href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.css" type="text/css"/>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+  <body>
+
+  <nav class="navbar navbar-expand-md bg-info navbar-light">
+  <a class="navbar-brand" href="#"><h2>Welcome to Justin' Portfolio</h2></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html">Home</a>
+      <li class="nav-item">
+        <a class="nav-link" href="../aboutme.html">About Justin</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../cv.html">Curriculum Vitae</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../portfolio.html">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../edtech.html">Edtech</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+
+    <h4>Bicycle Shelters, Routes and Priority Areas in NYC</h4>
+    <div id='map' class = "column"></div>
+    <br>
+    <div class = "column" "text-align: left"><p> For this map, a map of bicycle facilities in New York City, U.S.A. were mapped using open data from
+    <br><a href= "https://opendata.cityofnewyork.us/" target="_blank">NYC Open Data Portal</a>.
+    The purpose of the web map is to show the various bicycle facilities, zone and routes in NYC, so people can safely ride their bicycles.
+    The data was downloaded as a shapefile then
+    <br>it was converted to a GeoJSON file using QGIS. Using <a href="https://www.mapbox.com" target="_blank">Mapbox Studio</a>, each layer
+    were symbolized within Mapbox Studio and custom markers were added to show the bicycle shelters. Using HTML, CSS and JavaScript,
+    popups were created to indicate the various shelters on the map. Also, Bicycle Priority Areas were mapped to show neighborhoods
+    with comparatively high number of cyclist KSI (Killed or Seriously Injured) and few dedicated bicycle facilities. The different
+    neighborhoods of Queens and Brooklyn were coloured coded to show the different boroughs. The bicycle routes were also shown in <thead>
+    the map using popups to show different locations of bicycle routes in NYC. Two Plugins were incorporated into the map; one for
+    geocoding and the other for finding map directions depending on different transportation forms.
+    </thead>
+    </p>
+    </div>
+  <br>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+  <div><a href="https://www.nscc.ca/explorenscc/campuses/cogs/" target="_blank"><img src = "images/cogs.jpg"></a></div>
+  <div>
+    <br>
+	<br>
+  	<footer align = "left">&copy; 2020 Justin Chang</footer>
+    <br>
+  </div>
+</html>
