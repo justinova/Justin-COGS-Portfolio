@@ -26,55 +26,50 @@
   <body>
 
     <nav class="navbar navbar-expand-md bg-info navbar-light">
-      <a class="navbar-brand" href="#"><h2>Welcome to Justin' Portfolio</h2></a>
+      <div style="margin-left:50px" ><a class="navbar-brand"><h4><b>Justin's Portfolio</b></h4></a></div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="../index.html">HOME</a>
+            <li class="nav-item">
+              <a class="nav-link" href="../portfolio.html">PORTFOLIO</a>
+            </li>
           <li class="nav-item">
-            <a class="nav-link" href="../aboutme.html">About Justin</a>
+            <a class="nav-link" href="../cv.html">SKILLS & CAPABILITIES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../cv.html">Curriculum Vitae</a>
+            <a class="nav-link" href="../edtech.html">EDTECH</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../edtech.html">Edtech</a>
+            <a class="nav-link" href="../aboutme.html">ABOUT JUSTIN</a>
           </li>
         </ul>
       </div>
       </nav>
 
-    <h4>Bicycle Shelters, Routes and Priority Areas in NYC</h4>
-    <div id='map' class = "column"></div>
-    <br>
-    <div class = "column" "text-align: left"><p> For this map, a map of bicycle facilities in New York City, U.S.A. were mapped using open data from
-    <br><a href= "https://opendata.cityofnewyork.us/" target="_blank">NYC Open Data Portal</a>.
-    The purpose of the web map is to show the various bicycle facilities, zone and routes in NYC, so people can safely ride their bicycles.
-    The data was downloaded as a shapefile then
-    <br>it was converted to a GeoJSON file using QGIS. Using <a href="https://www.mapbox.com" target="_blank">Mapbox Studio</a>, each layer
-    were symbolized within Mapbox Studio and custom markers were added to show the bicycle shelters. Using HTML, CSS and JavaScript,
-    popups were created to indicate the various shelters on the map. Also, Bicycle Priority Areas were mapped to show neighborhoods
-    with comparatively high number of cyclist KSI (Killed or Seriously Injured) and few dedicated bicycle facilities. The different
-    neighborhoods of Queens and Brooklyn were coloured coded to show the different boroughs. The bicycle routes were also shown in <thead>
-    the map using popups to show different locations of bicycle routes in NYC. Two Plugins were incorporated into the map; one for
-    geocoding and the other for finding map directions depending on different transportation forms.
-    </thead>
-    </p>
+    <div class ="container">
+      <div class = "row">
+        <div style="margin-top:20px"><h4><b>Bicycle Shelters, Routes and Priority Areas in NYC</b></h4></div>
+        <p><h6>For this map, a map of bicycle facilities in New York City, U.S.A. were mapped using open data from
+          <a href= "https://opendata.cityofnewyork.us/" target="_blank">NYC Open Data Portal</a>.
+          The purpose of the web map is to show the various bicycle facilities, zone and routes in NYC, so people can safely ride their bicycles.
+          The data was downloaded as a shapefile then it was converted to a GeoJSON file using QGIS. Using <a href="https://www.mapbox.com" target="_blank">Mapbox Studio</a>, each layer
+          were symbolized within Mapbox Studio and custom markers were added to show the bicycle shelters. Using HTML, CSS and JavaScript,
+          popups were created to indicate the various shelters on the map. Also, Bicycle Priority Areas were mapped to show neighborhoods
+          with comparatively high number of cyclist KSI (Killed or Seriously Injured) and few dedicated bicycle facilities. The different
+          neighborhoods of Queens and Brooklyn were coloured coded to show the different boroughs. The bicycle routes were also shown in
+          the map using popups to show different locations of bicycle routes in NYC. Two Plugins were incorporated into the map; one for
+          geocoding and the other for finding map directions depending on different transportation forms.</h6></p>
+        <div class = "column-1">
+          <div id='map' ></div>
+        </div>
+      </div>
+      <div><footer><h6>&copy; 2020 Justin Chang</h6></footer></div>
     </div>
   <br>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
-  <div><a href="https://www.nscc.ca/explorenscc/campuses/cogs/" target="_blank"><img src = "images/cogs.jpg"></a></div>
-  <div>
-    <br>
-	<br>
-  	<footer align = "left">&copy; 2020 Justin Chang</footer>
-    <br>
-  </div>
 </html>

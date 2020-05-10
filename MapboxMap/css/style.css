@@ -1,20 +1,21 @@
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Noto+Serif:ital@1&display=swap');
 
-
-h1,h2,h4,h5 {
-  font-family: 'Acme', sans-serif;
-  color: black;
+h1,h2,h3{
+  /* font-family: 'Acme', sans-serif; */
+  font-family: 'Fira Sans', sans-serif;
 }
 
-h3 {
-	font-family: 'Poppins' , sans-serif;
+h4,h5,h6{
+  font-family: 'Josefin Sans', sans-serif;
 }
+
+
 
 h4{
-  margin-left: 50px;
+  /* margin-left: 50px; */
   margin-right: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -26,12 +27,12 @@ body{
 }
 
 #map{
-  width: 800px;
+  width: 1000px;
   height: 600px;
-  margin-left: 50px;
-  margin-right: 10px;
+  /* margin-left: 20%; */
+  /* margin-right: 10px;
   margin-bottom: 5px;
-  float:left;
+  float:left; */
 }
 
 #menu {
@@ -59,17 +60,42 @@ font-family: 'Open Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
 
+/* .column {
+  float: left;
+  padding-left: 10%;
+  width: 30%;
+} */
+
 .column {
   float: left;
-  padding-left: 50px;
-  width: 30%;
+  padding-right: 10%;
+  width: 50%;
 }
 
+.column-1 {
+  float: left;
+  padding-left: 10%;
+  width: 50%;
+}
+
+.column-2 {
+  float: left;
+  margin-top: 10%;
+  margin-left: 10%
+  padding-left: 30%;
+  width: 50%;
+}
+
+
+
 footer {
-  position: absolute;
-	left:0px;
+	left:5%;
 	bottom:0;
 	width: 100%;
 	text-align: left;
-  margin-left: 50px;
+  margin-left: 5px;
+}
+
+p{
+
 }
